@@ -8,7 +8,7 @@ public class test {
         File file = new File("E:\\plugins");
         File[] files = file.listFiles();
         for (File file1 : files) {
-            System.out.println(file1);
+            System.out.println(file1.getName().split("\\\\")[file1.getName().split("\\\\").length-1].split("\\.")[0]);
         }
 
     }
